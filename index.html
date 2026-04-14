@@ -92,13 +92,13 @@
                     <div class="flex items-start border-b border-gray-50 pb-1"><div class="w-[20%] font-bold text-blue-600">8.30 Pagi</div><div class="w-[80%]">Jamuan</div></div>
                     <div class="flex items-start border-b border-gray-50 pb-1">
                         <div class="w-[20%] font-bold text-blue-600">9.00 Pagi</div>
-                        <div class="w-[80%] leading-[1.3] text-gray-700">
+                        <div class="w-[80%] leading-[1.25] text-[clamp(0.65rem,1.8vh,0.85rem)] text-gray-700">
                             <span class="font-bold text-gray-900">Nyanyian Lagu & Bacaan Doa</span><br>
-                            Ucapan Alu-aluan YDP PIBG<br>
-                            Ucapan Pengetua<br>
+                            Ucapan YDP: <span class="font-semibold text-blue-800">Pn. Hasrina Wati Datuk Golkhan</span><br>
+                            Ucapan Pengetua: <span class="font-semibold text-blue-800">En. Anjan Bin Hj Ruddin</span><br>
                             Penyampaian Hadiah Cemerlang SPM 2025<br>
-                            Ucapan & Perasmian (PPD Kota Belud)<br>
-                            Persembahan & Penyampaian Cenderahati
+                            Perasmian: <span class="font-semibold text-blue-800">En. Rosmin Ijum</span> (PPD Kota Belud)<br>
+                            Persembahan & Cenderahati
                         </div>
                     </div>
                     <div class="flex items-start border-b border-gray-50 pb-1"><div class="w-[20%] font-bold text-blue-600">10.00 Pagi</div><div class="w-[80%]">Mesyuarat Agung Bermula & Cabutan Bertuah</div></div>
@@ -150,14 +150,14 @@
             </div>
         </div>
 
-        <!-- TAB 4: AJK PENGELOLA (7 Halaman untuk elak nama terpotong) -->
+        <!-- TAB 4: AJK PENGELOLA (9 Halaman Berasingan) -->
         <div id="tab-pengelola" class="tab-content h-full w-full flex-col">
             <div class="bg-white rounded-2xl shadow-sm p-3 w-full h-full border-t-4 border-purple-500 flex flex-col relative">
                 
                 <!-- Pengawal Halaman (Pagination Controls) -->
                 <div class="flex-none flex justify-between items-center mb-3 bg-purple-50 rounded-full p-1 border border-purple-100 shadow-sm z-10">
                     <button onclick="tukarSlide(-1)" class="bg-purple-600 text-white rounded-full w-8 h-8 flex items-center justify-center active:bg-purple-800 transition-colors"><i class="fas fa-chevron-left text-sm"></i></button>
-                    <span id="slide-indicator" class="text-[11px] md:text-sm font-bold text-purple-800 tracking-widest">HALAMAN 1 / 7</span>
+                    <span id="slide-indicator" class="text-[11px] md:text-sm font-bold text-purple-800 tracking-widest">HALAMAN 1 / 9</span>
                     <button onclick="tukarSlide(1)" class="bg-purple-600 text-white rounded-full w-8 h-8 flex items-center justify-center active:bg-purple-800 transition-colors"><i class="fas fa-chevron-right text-sm"></i></button>
                 </div>
 
@@ -177,86 +177,120 @@
                         </div>
                     </div>
 
-                    <!-- Halaman 2: Kerja 1 -->
-                    <div id="slide-2" class="absolute inset-0 flex flex-col justify-start space-y-3 pt-2 slide-content">
-                        <h4 class="text-[clamp(0.8rem,2vh,1rem)] font-bold text-center text-purple-700 mb-1"><i class="fas fa-briefcase mr-1"></i> J/K Kerja (Bahagian 1)</h4>
+                    <!-- Halaman 2: Kerja 1 (Diasingkan) -->
+                    <div id="slide-2" class="absolute inset-0 flex flex-col justify-start space-y-2 pt-1 slide-content">
+                        <h4 class="text-[clamp(0.8rem,2vh,1rem)] font-bold text-center text-purple-700 mb-1"><i class="fas fa-briefcase mr-1"></i> J/K Kerja (1/8)</h4>
                         
-                        <div class="bg-purple-50/50 rounded-lg p-2.5 border border-purple-50">
-                            <h5 class="font-bold text-blue-800 text-[11px] uppercase mb-1.5 flex items-center"><i class="fas fa-microphone-alt mr-1.5"></i>Pengerusi Acara & Siaraya</h5>
-                            <p class="text-[clamp(0.65rem,1.8vh,0.85rem)] leading-[1.6] font-medium text-gray-700">Supidie Bin Intah (K) &bull; Abdul Adzid Bin Abd. Hamid &bull; Joble Minsin (K) &bull; Mustakim Sintam</p>
+                        <div class="bg-purple-50/50 rounded-lg p-2 border border-purple-50">
+                            <h5 class="font-bold text-blue-800 text-[11px] uppercase mb-1">Pengerusi Acara</h5>
+                            <p class="text-[clamp(0.65rem,1.8vh,0.85rem)] font-medium text-gray-700">Supidie Bin Intah (K) &bull; Abdul Adzid Bin Abd. Hamid</p>
                         </div>
-                        
-                        <div class="bg-purple-50/50 rounded-lg p-2.5 border border-purple-50">
-                            <h5 class="font-bold text-blue-800 text-[11px] uppercase mb-1.5 flex items-center"><i class="fas fa-book mr-1.5"></i>Pendaftaran, Laporan & Cenderahati</h5>
-                            <p class="text-[clamp(0.65rem,1.8vh,0.85rem)] leading-[1.6] font-medium text-gray-700">Suraya Mohd Napiah (K) &bull; Nurhidayah Binti Lasig &bull; Pohziah Alam &bull; Suziyati Binti Shamsuddin &bull; Maslinah Binti Jikah &bull; Maimonah Maluddin (K) &bull; Mahani Binti Kamaharis &bull; Noor Haidayu Mohd Ali</p>
+                        <div class="bg-purple-50/50 rounded-lg p-2 border border-purple-50">
+                            <h5 class="font-bold text-blue-800 text-[11px] uppercase mb-1">Siaraya</h5>
+                            <p class="text-[clamp(0.65rem,1.8vh,0.85rem)] font-medium text-gray-700">Joble Minsin (K) &bull; Mustakim Sintam</p>
                         </div>
-
-                        <div class="bg-purple-50/50 rounded-lg p-2.5 border border-purple-50">
-                            <h5 class="font-bold text-blue-800 text-[11px] uppercase mb-1.5 flex items-center"><i class="fas fa-praying-hands mr-1.5"></i>Juruacara & Bacaan Doa</h5>
-                            <p class="text-[clamp(0.65rem,1.8vh,0.85rem)] leading-[1.6] font-medium text-gray-700">Esther Dora (K) &bull; Amirah Abdin &bull; Maribil Datu Hassan &bull; Rahim Ahmad (K) &bull; Norjaidi Uli &bull; Che Muhammad Bin Che Mat Zain</p>
+                        <div class="bg-purple-50/50 rounded-lg p-2 border border-purple-50">
+                            <h5 class="font-bold text-blue-800 text-[11px] uppercase mb-1">Juruacara</h5>
+                            <p class="text-[clamp(0.65rem,1.8vh,0.85rem)] font-medium text-gray-700">Esther Dora (K) &bull; Amirah Abdin &bull; Maribil Datu Hassan</p>
+                        </div>
+                        <div class="bg-purple-50/50 rounded-lg p-2 border border-purple-50">
+                            <h5 class="font-bold text-blue-800 text-[11px] uppercase mb-1">Bacaan Doa</h5>
+                            <p class="text-[clamp(0.65rem,1.8vh,0.85rem)] font-medium text-gray-700">Rahim Ahmad (K) &bull; Norjaidi Uli &bull; Che Muhammad Bin Che Mat Zain</p>
                         </div>
                     </div>
 
-                    <!-- Halaman 3: Kerja 2 (Penyambut Tetamu - Sangat Panjang) -->
-                    <div id="slide-3" class="absolute inset-0 flex flex-col justify-start pt-2 slide-content">
-                        <h4 class="text-[clamp(0.8rem,2vh,1rem)] font-bold text-center text-purple-700 mb-2"><i class="fas fa-briefcase mr-1"></i> J/K Kerja (Bahagian 2)</h4>
+                    <!-- Halaman 3: Kerja 2 (Diasingkan) -->
+                    <div id="slide-3" class="absolute inset-0 flex flex-col justify-start space-y-3 pt-2 slide-content">
+                        <h4 class="text-[clamp(0.8rem,2vh,1rem)] font-bold text-center text-purple-700 mb-1"><i class="fas fa-briefcase mr-1"></i> J/K Kerja (2/8)</h4>
+                        
+                        <div class="bg-purple-50/50 rounded-lg p-2.5 border border-purple-50">
+                            <h5 class="font-bold text-blue-800 text-[11px] uppercase mb-1.5">Pendaftaran</h5>
+                            <p class="text-[clamp(0.65rem,1.8vh,0.85rem)] leading-snug font-medium text-gray-700">Suraya Mohd Napiah (K) &bull; Nurhidayah Binti Lasig &bull; Pohziah Alam &bull; Suziyati Binti Shamsuddin &bull; Maslinah Binti Jikah</p>
+                        </div>
+                        <div class="bg-purple-50/50 rounded-lg p-2.5 border border-purple-50">
+                            <h5 class="font-bold text-blue-800 text-[11px] uppercase mb-1.5">Buku Laporan Dan Cenderahati</h5>
+                            <p class="text-[clamp(0.65rem,1.8vh,0.85rem)] leading-snug font-medium text-gray-700">Maimonah Maluddin (K) &bull; Mahani Binti Kamaharis &bull; Noor Haidayu Mohd Ali</p>
+                        </div>
+                    </div>
+
+                    <!-- Halaman 4: Kerja 3 (Penyambut Tetamu SAHAJA) -->
+                    <div id="slide-4" class="absolute inset-0 flex flex-col justify-start pt-2 slide-content">
+                        <h4 class="text-[clamp(0.8rem,2vh,1rem)] font-bold text-center text-purple-700 mb-2"><i class="fas fa-briefcase mr-1"></i> J/K Kerja (3/8)</h4>
                         
                         <div class="bg-purple-50/50 rounded-lg p-3 border border-purple-50 h-full flex flex-col">
-                            <h5 class="font-bold text-blue-800 text-[11px] uppercase mb-2 flex items-center"><i class="fas fa-handshake mr-1.5"></i>Penyambut Tetamu & Jamuan</h5>
-                            <p class="text-[clamp(0.6rem,1.75vh,0.85rem)] leading-[1.65] font-medium text-gray-700 text-justify">
-                                Maimun Binti Limbut (K) &bull; Haini Binti Mustal &bull; Sairah Jool &bull; Machinin Bin Bayogoh &bull; Elsie Binti Pius &bull; Juditah Binti Shammi &bull; Noraziah Sepil &bull; Dg Abiba Binti Mohd Jais &bull; Muni Gumbiled &bull; Heirny Munira Binti Zolkipli &bull; Jaim Bin Pisal &bull; Alice Lim Ming Yee (K)(VIP) &bull; Alizah Binti Samuil &bull; Rahimah Binti Mustapha &bull; Rugayah@Rogayah Binti Mantiar &bull; Tipah Sebil (VIP) &bull; Bayani Binti Mohd. Sirun (K)(Ibu Bapa) &bull; Haslinda Binti Awang &bull; Nooraslindahwati Binti Kerim &bull; Asalamah Binti Othman &bull; Masneh@Masnih Binti Hj. Ajim(VIP) &bull; Halimah Binti Betan(VIP) &bull; Marlin Sikil &bull; Linah Madari &bull; Jessica Mary Anthony &bull; Norain Jeman
+                            <h5 class="font-bold text-blue-800 text-[11px] uppercase mb-2">Penyambut Tetamu</h5>
+                            <p class="text-[clamp(0.65rem,1.8vh,0.85rem)] leading-[1.7] font-medium text-gray-700 text-justify">
+                                Maimun Binti Limbut (K) &bull; Haini Binti Mustal &bull; Sairah Jool &bull; Machinin Bin Bayogoh &bull; Elsie Binti Pius &bull; Juditah Binti Shammi &bull; Noraziah Sepil &bull; Dg Abiba Binti Mohd Jais &bull; Muni Gumbiled &bull; Heirny Munira Binti Zolkipli &bull; Jaim Bin Pisal
                             </p>
                         </div>
                     </div>
 
-                    <!-- Halaman 4: Kerja 3 -->
-                    <div id="slide-4" class="absolute inset-0 flex flex-col justify-start space-y-3 pt-2 slide-content">
-                        <h4 class="text-[clamp(0.8rem,2vh,1rem)] font-bold text-center text-purple-700 mb-1"><i class="fas fa-briefcase mr-1"></i> J/K Kerja (Bahagian 3)</h4>
-                        
-                        <div class="bg-purple-50/50 rounded-lg p-3 border border-purple-50">
-                            <h5 class="font-bold text-blue-800 text-[11px] uppercase mb-2 flex items-center"><i class="fas fa-chair mr-1.5"></i>Persiapan & Susun Atur Dewan</h5>
-                            <p class="text-[clamp(0.65rem,1.8vh,0.85rem)] leading-[1.65] font-medium text-gray-700">Ahmad Shah Bin Madri (K) &bull; Bernard Gilam &bull; Sharul Nizam bin Zulkifli &bull; Mohammad Norezwan &bull; Martin Pavanaris &bull; Hali Ab Ghani &bull; Jaafar Ahmad &bull; Hasbullah Bin Shari &bull; Florence LRM Ebbie &bull; Steve Waldren Melon &bull; Hairani Bin Haironam</p>
-                        </div>
-                        
-                        <div class="bg-purple-50/50 rounded-lg p-3 border border-purple-50">
-                            <h5 class="font-bold text-blue-800 text-[11px] uppercase mb-2 flex items-center"><i class="fas fa-calculator mr-1.5"></i>Mengira Undi</h5>
-                            <p class="text-[clamp(0.65rem,1.8vh,0.85rem)] leading-[1.65] font-medium text-gray-700">Aminah Mandak (K) &bull; Dg Shahfizah Ezyan Kaharuddin &bull; Judeth Ruaisan &bull; Adele Lian &bull; Aminah Mandak &bull; Anizah Binti Abdin &bull; Guru-Guru Praktikum</p>
-                        </div>
-                    </div>
-
-                    <!-- Halaman 5: Kerja 4 -->
+                    <!-- Halaman 5: Kerja 4 (Jamuan SAHAJA) -->
                     <div id="slide-5" class="absolute inset-0 flex flex-col justify-start pt-2 slide-content">
-                        <h4 class="text-[clamp(0.8rem,2vh,1rem)] font-bold text-center text-purple-700 mb-2"><i class="fas fa-briefcase mr-1"></i> J/K Kerja (Bahagian 4)</h4>
+                        <h4 class="text-[clamp(0.8rem,2vh,1rem)] font-bold text-center text-purple-700 mb-2"><i class="fas fa-briefcase mr-1"></i> J/K Kerja (4/8)</h4>
                         
                         <div class="bg-purple-50/50 rounded-lg p-3 border border-purple-50 h-full flex flex-col">
-                            <h5 class="font-bold text-blue-800 text-[11px] uppercase mb-2 flex items-center"><i class="fas fa-traffic-light mr-1.5"></i>Keselamatan / Trafik / Cabutan Bertuah</h5>
-                            <p class="text-[clamp(0.65rem,1.85vh,0.85rem)] leading-[1.7] font-medium text-gray-700 text-justify">
-                                Haryanto Salamat (K) &bull; Erwan Bin Deraman &bull; Ahmad Bin Binjaman &bull; Lily Yapun Kok &bull; Rosnah Binti Antiu &bull; Dulaip Rudin &bull; Siti Nuramah Binti Mar (K) &bull; Norafizah Binti Rajion &bull; Hidayana Jamsidin &bull; Anizah Binti Abdin &bull; Fathin Nadiah Muhamad Puzi &bull; Raffidah Watty Abdul Rusdin &bull; Nirmala Nadiah Binti Awang &bull; Nurul Suriani Binti Othman &bull; Lovenia Ornessa Danis &bull; Siti Norziah Binti Hj Abdul Malik &bull; Noor Atirah Mohammad Yunus &bull; Mourin Galap &bull; Ezzatinadiah Binti Zulkifli
+                            <h5 class="font-bold text-blue-800 text-[11px] uppercase mb-2">Jamuan</h5>
+                            <p class="text-[clamp(0.65rem,1.8vh,0.85rem)] leading-[1.7] font-medium text-gray-700 text-justify">
+                                Alice Lim Ming Yee (K)(VIP) &bull; Alizah Binti Samuil &bull; Rahimah Binti Mustapha &bull; Rugayah Binti Mantiar &bull; Tipah Sebil (VIP) &bull; Bayani Binti Mohd. Sirun (K)(Ibu Bapa) &bull; Haslinda Binti Awang &bull; Nooraslindahwati Binti Kerim &bull; Asalamah Binti Othman &bull; Masneh Binti Hj. Ajim (VIP) &bull; Halimah Binti Betan (VIP) &bull; Marlin Sikil &bull; Linah Madari &bull; Jessica Mary Anthony &bull; Norain Jeman
                             </p>
                         </div>
                     </div>
 
-                    <!-- Halaman 6: Kerja 5 (Persiapan Dewan - Panjang) -->
-                    <div id="slide-6" class="absolute inset-0 flex flex-col justify-start pt-2 slide-content">
-                        <h4 class="text-[clamp(0.8rem,2vh,1rem)] font-bold text-center text-purple-700 mb-2"><i class="fas fa-briefcase mr-1"></i> J/K Kerja (Bahagian 5)</h4>
+                    <!-- Halaman 6: Kerja 5 (Diasingkan) -->
+                    <div id="slide-6" class="absolute inset-0 flex flex-col justify-start space-y-3 pt-2 slide-content">
+                        <h4 class="text-[clamp(0.8rem,2vh,1rem)] font-bold text-center text-purple-700 mb-1"><i class="fas fa-briefcase mr-1"></i> J/K Kerja (5/8)</h4>
+                        
+                        <div class="bg-purple-50/50 rounded-lg p-2.5 border border-purple-50">
+                            <h5 class="font-bold text-blue-800 text-[11px] uppercase mb-1.5">Persiapan & Susun Atur Dewan</h5>
+                            <p class="text-[clamp(0.65rem,1.8vh,0.85rem)] leading-snug font-medium text-gray-700">Ahmad Shah Bin Madri (K) &bull; Bernard Gilam &bull; Sharul Nizam bin Zulkifli &bull; Mohammad Norezwan &bull; Martin Pavanaris &bull; Hali Ab Ghani &bull; Jaafar Ahmad &bull; Hasbullah Bin Shari &bull; Florence LRM Ebbie &bull; Steve Waldren Melon &bull; Hairani Bin Haironam</p>
+                        </div>
+                        
+                        <div class="bg-purple-50/50 rounded-lg p-2.5 border border-purple-50">
+                            <h5 class="font-bold text-blue-800 text-[11px] uppercase mb-1.5">Mengira Undi</h5>
+                            <p class="text-[clamp(0.65rem,1.8vh,0.85rem)] leading-snug font-medium text-gray-700">Aminah Mandak (K) &bull; Dg Shahfizah Ezyan Kaharuddin &bull; Judeth Ruaisan &bull; Adele Lian &bull; Aminah Mandak &bull; Anizah Binti Abdin &bull; Guru-Guru Praktikum</p>
+                        </div>
+                    </div>
+
+                    <!-- Halaman 7: Kerja 6 (Diasingkan) -->
+                    <div id="slide-7" class="absolute inset-0 flex flex-col justify-start space-y-3 pt-2 slide-content">
+                        <h4 class="text-[clamp(0.8rem,2vh,1rem)] font-bold text-center text-purple-700 mb-1"><i class="fas fa-briefcase mr-1"></i> J/K Kerja (6/8)</h4>
+                        
+                        <div class="bg-purple-50/50 rounded-lg p-2 border border-purple-50">
+                            <h5 class="font-bold text-blue-800 text-[11px] uppercase mb-1">Keselamatan / Trafik / Parking</h5>
+                            <p class="text-[clamp(0.65rem,1.8vh,0.85rem)] leading-snug font-medium text-gray-700">Haryanto Salamat (K) &bull; Erwan Bin Deraman &bull; Ahmad Bin Binjaman &bull; Lily Yapun Kok &bull; Rosnah Binti Antiu &bull; Dulaip Rudin</p>
+                        </div>
+                        
+                        <div class="bg-purple-50/50 rounded-lg p-2 border border-purple-50">
+                            <h5 class="font-bold text-blue-800 text-[11px] uppercase mb-1">Cabutan Bertuah</h5>
+                            <p class="text-[clamp(0.65rem,1.75vh,0.85rem)] leading-snug font-medium text-gray-700">Siti Nuramah Binti Mar (K) &bull; Norafizah Binti Rajion &bull; Hidayana Jamsidin &bull; Anizah Binti Abdin &bull; Fathin Nadiah Muhamad Puzi &bull; Raffidah Watty Abdul Rusdin &bull; Nirmala Nadiah Binti Awang &bull; Nurul Suriani Binti Othman &bull; Lovenia Ornessa Danis &bull; Siti Norziah Binti Hj Abdul Malik &bull; Noor Atirah Mohammad Yunus &bull; Mourin Galap &bull; Ezzatinadiah Binti Zulkifli</p>
+                        </div>
+                    </div>
+
+                    <!-- Halaman 8: Kerja 7 (Persiapan Dewan SAHAJA) -->
+                    <div id="slide-8" class="absolute inset-0 flex flex-col justify-start pt-2 slide-content">
+                        <h4 class="text-[clamp(0.8rem,2vh,1rem)] font-bold text-center text-purple-700 mb-2"><i class="fas fa-briefcase mr-1"></i> J/K Kerja (7/8)</h4>
                         
                         <div class="bg-purple-50/50 rounded-lg p-3 border border-purple-50 h-full flex flex-col">
-                            <h5 class="font-bold text-blue-800 text-[11px] uppercase mb-2 flex items-center"><i class="fas fa-paint-roller mr-1.5"></i>Persiapan Dewan</h5>
-                            <p class="text-[clamp(0.65rem,1.85vh,0.85rem)] leading-[1.7] font-medium text-gray-700 text-justify">
+                            <h5 class="font-bold text-blue-800 text-[11px] uppercase mb-2">Persiapan Dewan</h5>
+                            <p class="text-[clamp(0.65rem,1.75vh,0.85rem)] leading-[1.65] font-medium text-gray-700 text-justify">
                                 Salwani Binti Mohd Saidi (K) &bull; Dg Noraslinah Mardin &bull; Musyalwathy Binti Mustapha &bull; Nur Atieqa Guntarak &bull; Cecelia Vitus Jual &bull; Baitah Binti Gindol &bull; Amlinah Binti Jemali &bull; Emelda Juanis &bull; Atineh Binti Tanggulau &bull; Darlene Catrina Marcus &bull; Wong Asnah &bull; A Me Sundang &bull; Jeronicca Lis Dos &bull; Michelle Binti Robin &bull; Patricia Binti Sumbin &bull; Ernah Binti Toh &bull; Connie Muslim &bull; Santa Tresia Francis &bull; Eva Hartini Matinding &bull; Floritah Binti Anthony &bull; Roshaineh Bte Harun
                             </p>
                         </div>
                     </div>
 
-                    <!-- Halaman 7: Kerja 6 -->
-                    <div id="slide-7" class="absolute inset-0 flex flex-col justify-start pt-2 slide-content">
-                        <h4 class="text-[clamp(0.8rem,2vh,1rem)] font-bold text-center text-purple-700 mb-2"><i class="fas fa-briefcase mr-1"></i> J/K Kerja (Bahagian 6)</h4>
+                    <!-- Halaman 9: Kerja 8 (Diasingkan) -->
+                    <div id="slide-9" class="absolute inset-0 flex flex-col justify-start space-y-3 pt-2 slide-content">
+                        <h4 class="text-[clamp(0.8rem,2vh,1rem)] font-bold text-center text-purple-700 mb-1"><i class="fas fa-briefcase mr-1"></i> J/K Kerja (8/8)</h4>
 
-                        <div class="bg-purple-50/50 rounded-lg p-3 border border-purple-50">
-                            <h5 class="font-bold text-blue-800 text-[11px] uppercase mb-2 flex items-center"><i class="fas fa-image mr-1.5"></i>Banner, Buku Program & Persembahan</h5>
-                            <p class="text-[clamp(0.65rem,1.85vh,0.85rem)] leading-[1.7] font-medium text-gray-700 text-justify">
-                                Norjaya Hj. Adzim (K) &bull; Jackson Kembin &bull; Siti Radzia Binti Ramlee &bull; Rahim Bin Ahmad &bull; Shah Affendy Bin Jafri (K) &bull; Jamliah Pesan
-                            </p>
+                        <div class="bg-purple-50/50 rounded-lg p-2.5 border border-purple-50">
+                            <h5 class="font-bold text-blue-800 text-[11px] uppercase mb-1.5">Banner, Aturcara, Buku Program & Dokumentasi</h5>
+                            <p class="text-[clamp(0.65rem,1.8vh,0.85rem)] leading-snug font-medium text-gray-700">Norjaya Hj. Adzim (K) &bull; Jackson Kembin &bull; Siti Radzia Binti Ramlee &bull; Rahim Bin Ahmad</p>
+                        </div>
+
+                        <div class="bg-purple-50/50 rounded-lg p-2.5 border border-purple-50">
+                            <h5 class="font-bold text-blue-800 text-[11px] uppercase mb-1.5">Persembahan & Gimik Perasmian</h5>
+                            <p class="text-[clamp(0.65rem,1.8vh,0.85rem)] leading-snug font-medium text-gray-700">Shah Affendy Bin Jafri (K) &bull; Jamliah Pesan</p>
                         </div>
                     </div>
 
@@ -356,14 +390,14 @@
             }
         }
 
-        // --- Fungsi Pagination / Slide (Untuk AJK Pengelola 7 Halaman) ---
+        // --- Fungsi Pagination / Slide (Untuk AJK Pengelola 9 Halaman) ---
         let slideSemasa = 1;
-        const jumlahSlide = 7;
+        const jumlahSlide = 9; // Ditambah kepada 9 supaya betul-betul diasingkan
 
         function tukarSlide(arah) {
             slideSemasa += arah;
             
-            // Kekalkan dalam had 1 hingga 7
+            // Kekalkan dalam had 1 hingga 9
             if (slideSemasa > jumlahSlide) slideSemasa = 1; // Kembali ke muka depan jika lebih
             if (slideSemasa < 1) slideSemasa = jumlahSlide; // Pergi ke muka akhir jika undur
             
