@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Buku Program: MESYUARAT AGUNG PIBG</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            overscroll-behavior-y: none; /* Elak kesan 'bounce' pada telefon */
+        }
+        .bg-pattern { 
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); 
+        }
+        /* Transisi Lembut untuk Tab dan Slide */
+        .tab-content { display: none; opacity: 0; transition: opacity 0.3s ease; }
+        .tab-content.active { display: flex; opacity: 1; }
+        
+        .slide-content { display: none; opacity: 0; transition: opacity 0.3s ease; }
+        .slide-content.active { display: flex; opacity: 1; }
+    </style>
+</head>
+<body class="h-[100dvh] w-full bg-gray-100 flex flex-col overflow-hidden select-none text-gray-800">
+
+    <!-- Header (Ketinggian tetap) -->
+    <header class="flex-none h-[18dvh] bg-blue-800 text-white shadow-md bg-pattern rounded-b-[2rem] flex flex-col justify-center items-center z-10 p-2 relative">
+        <div class="absolute -bottom-5 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md">
+            <i class="fas fa-school text-blue-800 text-lg"></i>
+        </div>
+        <h1 class="text-[clamp(1rem,3.5vh,1.5rem)] font-bold tracking-wider leading-tight text-center">MESYUARAT AGUNG PIBG</h1>
+        <h2 class="text-[clamp(0.85rem,2.5vh,1.25rem)] font-semibold text-yellow-300 leading-tight text-center">SMK ARSHAD KOTA BELUD</h2>
+        <span class="text-[clamp(0.65rem,1.8vh,0.85rem)] bg-blue-900/50 px-3 py-0.5 rounded-full mt-1">KALI KE-26</span>
+    </header>
+
+    <!-- Kandungan Utama (Fleksibel, tiada skrol) -->
+    <main class="flex-grow relative w-full max-w-3xl mx-auto p-4 flex flex-col justify-center mt-3 mb-1">
+        
+        <!-- TAB 1: UTAMA -->
+        <div id="tab-utama" class="tab-content active h-full w-full flex-col justify-center items-center">
+            <div class="bg-white rounded-2xl shadow-sm p-5 w-full border-t-4 border-blue-600 flex flex-col gap-4">
+                <h3 class="text-[clamp(1rem,3vh,1.25rem)] font-bold text-center text-blue-800 border-b border-gray-100 pb-2"><i class="fas fa-info-circle mr-2"></i>Maklumat Program</h3>
+                
+                <div class="flex items-center bg-blue-50/50 p-3 rounded-xl">
+                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4 shrink-0"><i class="far fa-calendar-alt text-lg"></i></div>
+                    <div>
+                        <p class="text-[10px] md:text-xs text-gray-500 font-semibold uppercase">Tarikh</p>
+                        <p class="font-bold text-[clamp(0.85rem,2.5vh,1.1rem)]">18 April 2026 (Sabtu)</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-center bg-blue-50/50 p-3 rounded-xl">
+                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4 shrink-0"><i class="far fa-clock text-lg"></i></div>
+                    <div>
+                        <p class="text-[10px] md:text-xs text-gray-500 font-semibold uppercase">Masa</p>
+                        <p class="font-bold text-[clamp(0.85rem,2.5vh,1.1rem)]">6:50 pagi – 12:00 t/hari</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-center bg-blue-50/50 p-3 rounded-xl">
+                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4 shrink-0"><i class="fas fa-map-marker-alt text-lg"></i></div>
+                    <div>
+                        <p class="text-[10px] md:text-xs text-gray-500 font-semibold uppercase">Tempat</p>
+                        <p class="font-bold text-[clamp(0.85rem,2.5vh,1.1rem)] leading-tight">Dewan Terbuka SMK Arshad</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 2: ATURCARA -->
+        <div id="tab-aturcara" class="tab-content h-full w-full flex-col justify-center">
+            <div class="bg-white rounded-2xl shadow-sm p-4 w-full h-full border-t-4 border-yellow-500 flex flex-col">
+                <h3 class="text-[clamp(0.9rem,2.5vh,1.2rem)] font-bold text-center text-blue-800 mb-3"><i class="fas fa-list-ol mr-2"></i>Aturcara Majlis</h3>
+                <div class="flex-grow flex flex-col justify-between text-[clamp(0.65rem,2vh,0.9rem)]">
+                    <div class="flex items-start border-b border-gray-50 pb-1"><div class="w-[20%] font-bold text-blue-600">7.00 Pagi</div><div class="w-[80%]">Ketibaan AJK dan Ahli PIBG</div></div>
+                    <div class="flex items-start border-b border-gray-50 pb-1"><div class="w-[20%] font-bold text-blue-600">7.30 Pagi</div><div class="w-[80%]">Ketibaan Perasmi</div></div>
+                    <div class="flex items-start border-b border-gray-50 pb-1"><div class="w-[20%] font-bold text-blue-600">8.30 Pagi</div><div class="w-[80%]">Jamuan</div></div>
+                    <div class="flex items-start border-b border-gray-50 pb-1">
+                        <div class="w-[20%] font-bold text-blue-600">9.00 Pagi</div>
+                        <div class="w-[80%] leading-[1.3] text-gray-700">
+                            <span class="font-bold text-gray-900">Nyanyian Lagu & Bacaan Doa</span><br>
+                            Ucapan Alu-aluan YDP PIBG<br>
+                            Ucapan Pengetua<br>
+                            Penyampaian Hadiah Cemerlang SPM 2025<br>
+                            Ucapan & Perasmian (PPD Kota Belud)<br>
+                            Persembahan & Penyampaian Cenderahati
+                        </div>
+                    </div>
+                    <div class="flex items-start border-b border-gray-50 pb-1"><div class="w-[20%] font-bold text-blue-600">10.00 Pagi</div><div class="w-[80%]">Mesyuarat Agung Bermula & Cabutan Bertuah</div></div>
+                    <div class="flex items-start"><div class="w-[20%] font-bold text-blue-600">12.00 T/H</div><div class="w-[80%]">Majlis Bersurai</div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 3: AJK PIBG -->
+        <div id="tab-pibg" class="tab-content h-full w-full flex-col justify-center">
+            <div class="bg-white rounded-2xl shadow-sm p-3 w-full h-full border-t-4 border-green-500 flex flex-col justify-around">
+                <h3 class="text-[clamp(0.9rem,2.5vh,1.2rem)] font-bold text-center text-blue-800 mb-1"><i class="fas fa-users mr-2"></i>AJK PIBG Sesi 2026</h3>
+                
+                <div class="grid grid-cols-2 gap-2 text-[clamp(0.6rem,1.8vh,0.85rem)]">
+                    <div class="bg-gray-50 p-1.5 rounded border-l-2 border-green-500">
+                        <div class="font-bold text-green-700 text-[10px] uppercase leading-none">Pengetua</div>
+                        <div class="font-medium mt-0.5">En. Anjan Bin Ruddin</div>
+                    </div>
+                    <div class="bg-gray-50 p-1.5 rounded border-l-2 border-green-500">
+                        <div class="font-bold text-green-700 text-[10px] uppercase leading-none">YDP</div>
+                        <div class="font-medium mt-0.5">Pn. Hasrina Wati Datuk Golkhan</div>
+                    </div>
+                    <div class="bg-gray-50 p-1.5 rounded border-l-2 border-green-500">
+                        <div class="font-bold text-green-700 text-[10px] uppercase leading-none">NYDP</div>
+                        <div class="font-medium mt-0.5">En. Norbet Bin Gerik</div>
+                    </div>
+                    <div class="bg-gray-50 p-1.5 rounded border-l-2 border-green-500">
+                        <div class="font-bold text-green-700 text-[10px] uppercase leading-none">Setiausaha</div>
+                        <div class="font-medium mt-0.5">Pn. Maimonah Bte Maluddin</div>
+                    </div>
+                    <div class="bg-gray-50 p-1.5 rounded border-l-2 border-green-500">
+                        <div class="font-bold text-green-700 text-[10px] uppercase leading-none">Pen. S/U</div>
+                        <div class="font-medium mt-0.5">Pn. Mahani Binti Kamaharis</div>
+                    </div>
+                    <div class="bg-gray-50 p-1.5 rounded border-l-2 border-green-500">
+                        <div class="font-bold text-green-700 text-[10px] uppercase leading-none">Bendahari</div>
+                        <div class="font-medium mt-0.5">Pn. Sokinah Binti Sumardi</div>
+                    </div>
+                    
+                    <!-- Senarai panjang diubah menjadi melintang padat -->
+                    <div class="bg-gray-50 p-1.5 rounded border-l-2 border-green-500 col-span-2">
+                        <div class="font-bold text-green-700 text-[10px] uppercase leading-none mb-0.5">AJK Guru</div>
+                        <div class="font-medium leading-tight">Pn. Maimon Bt Limbot &bull; En. Mustakim Bin Sintam &bull; En. Supidie Bin Intah &bull; Cik Haini Binti Mustal &bull; Pn. Sairah Binti Jool &bull; En. Machinin Bin Bayogoh</div>
+                    </div>
+                    <div class="bg-gray-50 p-1.5 rounded border-l-2 border-green-500 col-span-2">
+                        <div class="font-bold text-green-700 text-[10px] uppercase leading-none mb-0.5">AJK Ibu Bapa</div>
+                        <div class="font-medium leading-tight">En. Abd. Laham Hj. Rudin &bull; Pn. Sanam@Marculin Malun &bull; En. Ahmad Bin Binjaman &bull; Pn. Rohana Binti Dawang &bull; Pn. Helmah Jaiman</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 4: AJK PENGELOLA (Ada Pagination Dalaman) -->
+        <div id="tab-pengelola" class="tab-content h-full w-full flex-col">
+            <div class="bg-white rounded-2xl shadow-sm p-3 w-full h-full border-t-4 border-purple-500 flex flex-col relative">
+                
+                <!-- Pengawal Halaman (Pagination Controls) -->
+                <div class="flex-none flex justify-between items-center mb-2 bg-purple-50 rounded-full p-1 border border-purple-100">
+                    <button onclick="tukarSlide(-1)" class="bg-purple-600 text-white rounded-full w-7 h-7 flex items-center justify-center active:bg-purple-800"><i class="fas fa-chevron-left text-xs"></i></button>
+                    <span id="slide-indicator" class="text-[11px] md:text-sm font-bold text-purple-800 tracking-widest">HALAMAN 1 / 5</span>
+                    <button onclick="tukarSlide(1)" class="bg-purple-600 text-white rounded-full w-7 h-7 flex items-center justify-center active:bg-purple-800"><i class="fas fa-chevron-right text-xs"></i></button>
+                </div>
+
+                <!-- Kontena Halaman (Tinggi fleksibel, tiada skrol) -->
+                <div class="flex-grow relative w-full overflow-hidden">
+                    
+                    <!-- Halaman 1: Induk -->
+                    <div id="slide-1" class="absolute inset-0 flex flex-col justify-center slide-content active">
+                        <h4 class="text-[clamp(0.8rem,2vh,1rem)] font-bold text-center text-purple-700 mb-3"><i class="fas fa-sitemap mr-1"></i> Jawatankuasa Induk</h4>
+                        <div class="grid grid-cols-1 gap-2 text-[clamp(0.7rem,2vh,0.9rem)]">
+                            <div class="flex border-b border-gray-100 pb-1"><div class="w-[35%] font-semibold text-gray-600">Penasihat</div><div class="w-[65%] font-bold text-gray-800">Anjan Ruddin</div></div>
+                            <div class="flex border-b border-gray-100 pb-1"><div class="w-[35%] font-semibold text-gray-600">Pengerusi</div><div class="w-[65%] font-bold text-gray-800">Hasrina Wati Datuk Golkhan</div></div>
+                            <div class="flex border-b border-gray-100 pb-1"><div class="w-[35%] font-semibold text-gray-600">Naib Pengerusi</div><div class="w-[65%] font-bold text-gray-800">Norbet Bin Gerik</div></div>
+                            <div class="flex border-b border-gray-100 pb-1"><div class="w-[35%] font-semibold text-gray-600">Setiausaha</div><div class="w-[65%] font-bold text-gray-800">Maimonah Bt Maluddin</div></div>
+                            <div class="flex border-b border-gray-100 pb-1"><div class="w-[35%] font-semibold text-gray-600">Pen. S/U</div><div class="w-[65%] font-bold text-gray-800">Mahani Binti Kamaharis</div></div>
+                            <div class="flex"><div class="w-[35%] font-semibold text-gray-600">Bendahari</div><div class="w-[65%] font-bold text-gray-800">Sokinah Binti Sumardi</div></div>
+                        </div>
+                    </div>
+
+                    <!-- Halaman 2: Kerja Bahagian 1 -->
+                    <div id="slide-2" class="absolute inset-0 flex flex-col justify-evenly slide-content">
+                        <h4 class="text-[clamp(0.8rem,2vh,1rem)] font-bold text-center text-purple-700 mb-1"><i class="fas fa-briefcase mr-1"></i> J/K Kerja (Bahagian 1)</h4>
+                        
+                        <div class="bg-gray-50 rounded p-2">
+                            <h5 class="font-bold text-blue-800 text-[10px] uppercase mb-1">Pengerusi Acara, Siaraya</h5>
+                            <p class="text-[clamp(0.6rem,1.8vh,0.85rem)] leading-tight font-medium text-gray-700 text-justify">Supidie Bin Intah (K) &bull; Abdul Adzid Bin Abd. Hamid &bull; Joble Minsin (K) &bull; Mustakim Sintam</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 rounded p-2">
+                            <h5 class="font-bold text-blue-800 text-[10px] uppercase mb-1">Pendaftaran, Laporan & Cenderahati</h5>
+                            <p class="text-[clamp(0.6rem,1.8vh,0.85rem)] leading-tight font-medium text-gray-700 text-justify">Suraya Mohd Napiah (K) &bull; Nurhidayah Binti Lasig &bull; Pohziah Alam &bull; Suziyati Binti Shamsuddin &bull; Maslinah Binti Jikah &bull; Maimonah Maluddin (K) &bull; Mahani Binti Kamaharis &bull; Noor Haidayu Mohd Ali</p>
+                        </div>
+
+                        <div class="bg-gray-50 rounded p-2">
+                            <h5 class="font-bold text-blue-800 text-[10px] uppercase mb-1">Juruacara, Bacaan Doa</h5>
+                            <p class="text-[clamp(0.6rem,1.8vh,0.85rem)] leading-tight font-medium text-gray-700 text-justify">Esther Dora (K) &bull; Amirah Abdin &bull; Maribil Datu Hassan &bull; Rahim Ahmad (K) &bull; Norjaidi Uli &bull; Che Muhammad Bin Che Mat Zain</p>
+                        </div>
+                    </div>
+
+                    <!-- Halaman 3: Kerja Bahagian 2 -->
+                    <div id="slide-3" class="absolute inset-0 flex flex-col justify-center slide-content">
+                        <h4 class="text-[clamp(0.8rem,2vh,1rem)] font-bold text-center text-purple-700 mb-1"><i class="fas fa-briefcase mr-1"></i> J/K Kerja (Bahagian 2)</h4>
+                        
+                        <div class="bg-gray-50 rounded p-2 h-full flex flex-col">
+                            <h5 class="font-bold text-blue-800 text-[10px] uppercase mb-1">Penyambut Tetamu, Jamuan</h5>
+                            <!-- Teks dipadatkan agar muat skrin penuh -->
+                            <p class="text-[clamp(0.55rem,1.6vh,0.8rem)] leading-tight font-medium text-gray-700 text-justify flex-grow">
+                                Maimun Binti Limbut (K) &bull; Haini Binti Mustal &bull; Sairah Jool &bull; Machinin Bin Bayogoh &bull; Elsie Binti Pius &bull; Juditah Binti Shammi &bull; Noraziah Sepil &bull; Dg Abiba Binti Mohd Jais &bull; Muni Gumbiled &bull; Heirny Munira Binti Zolkipli &bull; Jaim Bin Pisal &bull; Alice Lim Ming Yee (K)(VIP) &bull; Alizah Binti Samuil &bull; Rahimah Binti Mustapha &bull; Rugayah@Rogayah Binti Mantiar &bull; Tipah Sebil (VIP) &bull; Bayani Binti Mohd. Sirun (K)(Ibu Bapa) &bull; Haslinda Binti Awang &bull; Nooraslindahwati Binti Kerim &bull; Asalamah Binti Othman &bull; Masneh@Masnih Binti Hj. Ajim(VIP) &bull; Halimah Binti Betan(VIP) &bull; Marlin Sikil &bull; Linah Madari &bull; Jessica Mary Anthony &bull; Norain Jeman
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Halaman 4: Kerja Bahagian 3 -->
+                    <div id="slide-4" class="absolute inset-0 flex flex-col justify-evenly slide-content">
+                        <h4 class="text-[clamp(0.8rem,2vh,1rem)] font-bold text-center text-purple-700 mb-1"><i class="fas fa-briefcase mr-1"></i> J/K Kerja (Bahagian 3)</h4>
+                        
+                        <div class="bg-gray-50 rounded p-2">
+                            <h5 class="font-bold text-blue-800 text-[10px] uppercase mb-1">Persiapan & Susun Atur Dewan</h5>
+                            <p class="text-[clamp(0.6rem,1.8vh,0.85rem)] leading-tight font-medium text-gray-700 text-justify">Ahmad Shah Bin Madri (K) &bull; Bernard Gilam &bull; Sharul Nizam bin Zulkifli &bull; Mohammad Norezwan &bull; Martin Pavanaris &bull; Hali Ab Ghani &bull; Jaafar Ahmad &bull; Hasbullah Bin Shari &bull; Florence LRM Ebbie &bull; Steve Waldren Melon &bull; Hairani Bin Haironam</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 rounded p-2">
+                            <h5 class="font-bold text-blue-800 text-[10px] uppercase mb-1">Keselamatan / Trafik / Cabutan Bertuah</h5>
+                            <p class="text-[clamp(0.6rem,1.8vh,0.85rem)] leading-tight font-medium text-gray-700 text-justify">Haryanto Salamat (K) &bull; Erwan Bin Deraman &bull; Ahmad Bin Binjaman &bull; Lily Yapun Kok &bull; Rosnah Binti Antiu &bull; Dulaip Rudin &bull; Siti Nuramah Binti Mar (K) &bull; Norafizah Binti Rajion &bull; Hidayana Jamsidin &bull; Anizah Binti Abdin &bull; Fathin Nadiah Muhamad Puzi &bull; Raffidah Watty Abdul Rusdin &bull; Nirmala Nadiah Binti Awang &bull; Nurul Suriani Binti Othman &bull; Lovenia Ornessa Danis &bull; Siti Norziah Binti Hj Abdul Malik &bull; Noor Atirah Mohammad Yunus &bull; Mourin Galap &bull; Ezzatinadiah Binti Zulkifli</p>
+                        </div>
+                    </div>
+
+                    <!-- Halaman 5: Kerja Bahagian 4 -->
+                    <div id="slide-5" class="absolute inset-0 flex flex-col justify-evenly slide-content">
+                        <h4 class="text-[clamp(0.8rem,2vh,1rem)] font-bold text-center text-purple-700 mb-1"><i class="fas fa-briefcase mr-1"></i> J/K Kerja (Bahagian 4)</h4>
+                        
+                        <div class="bg-gray-50 rounded p-2">
+                            <h5 class="font-bold text-blue-800 text-[10px] uppercase mb-1">Persiapan Dewan</h5>
+                            <p class="text-[clamp(0.55rem,1.6vh,0.8rem)] leading-tight font-medium text-gray-700 text-justify">Salwani Binti Mohd Saidi (K) &bull; Dg Noraslinah Mardin &bull; Musyalwathy Binti Mustapha &bull; Nur Atieqa Guntarak &bull; Cecelia Vitus Jual &bull; Baitah Binti Gindol &bull; Amlinah Binti Jemali &bull; Emelda Juanis &bull; Atineh Binti Tanggulau &bull; Darlene Catrina Marcus &bull; Wong Asnah &bull; A Me Sundang &bull; Jeronicca Lis Dos &bull; Michelle Binti Robin &bull; Patricia Binti Sumbin &bull; Ernah Binti Toh &bull; Connie Muslim &bull; Santa Tresia Francis &bull; Eva Hartini Matinding &bull; Floritah Binti Anthony &bull; Roshaineh Bte Harun</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 rounded p-2">
+                            <h5 class="font-bold text-blue-800 text-[10px] uppercase mb-1">Mengira Undi</h5>
+                            <p class="text-[clamp(0.6rem,1.8vh,0.85rem)] leading-tight font-medium text-gray-700 text-justify">Aminah Mandak (K) &bull; Dg Shahfizah Ezyan Kaharuddin &bull; Judeth Ruaisan &bull; Adele Lian &bull; Aminah Mandak &bull; Anizah Binti Abdin &bull; Guru-Guru Praktikum</p>
+                        </div>
+
+                        <div class="bg-gray-50 rounded p-2">
+                            <h5 class="font-bold text-blue-800 text-[10px] uppercase mb-1">Banner, Buku Program, Persembahan</h5>
+                            <p class="text-[clamp(0.6rem,1.8vh,0.85rem)] leading-tight font-medium text-gray-700 text-justify">Norjaya Hj. Adzim (K) &bull; Jackson Kembin &bull; Siti Radzia Binti Ramlee &bull; Rahim Bin Ahmad &bull; Shah Affendy Bin Jafri (K) &bull; Jamliah Pesan</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Navigasi Bawah (Ketinggian tetap) -->
+    <nav class="flex-none h-[10dvh] bg-white shadow-[0_-5px_15px_rgba(0,0,0,0.05)] z-20 w-full relative">
+        <div class="max-w-3xl mx-auto h-full px-1">
+            <div class="flex justify-between items-center h-full text-[10px] md:text-xs">
+                <button onclick="switchTab('utama')" id="btn-utama" class="nav-btn flex-1 h-full flex flex-col justify-center items-center text-blue-600 border-t-2 border-blue-600 active:bg-gray-50">
+                    <i class="fas fa-home text-[1.2rem] mb-1"></i> Utama
+                </button>
+                <button onclick="switchTab('aturcara')" id="btn-aturcara" class="nav-btn flex-1 h-full flex flex-col justify-center items-center text-gray-400 border-t-2 border-transparent hover:text-blue-500 active:bg-gray-50">
+                    <i class="fas fa-clipboard-list text-[1.2rem] mb-1"></i> Aturcara
+                </button>
+                <button onclick="switchTab('pibg')" id="btn-pibg" class="nav-btn flex-1 h-full flex flex-col justify-center items-center text-gray-400 border-t-2 border-transparent hover:text-blue-500 active:bg-gray-50">
+                    <i class="fas fa-users text-[1.2rem] mb-1"></i> PIBG
+                </button>
+                <button onclick="switchTab('pengelola')" id="btn-pengelola" class="nav-btn flex-1 h-full flex flex-col justify-center items-center text-gray-400 border-t-2 border-transparent hover:text-blue-500 active:bg-gray-50">
+                    <i class="fas fa-sitemap text-[1.2rem] mb-1"></i> Pengelola
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- JavaScript Interaktif -->
+    <script>
+        // --- Fungsi Tab ---
+        function switchTab(tabId) {
+            // Sembunyikan semua tab
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Set semula gaya butang nav
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.classList.remove('text-blue-600', 'border-blue-600');
+                btn.classList.add('text-gray-400', 'border-transparent');
+            });
+            
+            // Papar tab dipilih
+            document.getElementById('tab-' + tabId).classList.add('active');
+            
+            // Serlahkan butang nav dipilih
+            const activeBtn = document.getElementById('btn-' + tabId);
+            activeBtn.classList.remove('text-gray-400', 'border-transparent');
+            activeBtn.classList.add('text-blue-600', 'border-blue-600');
+
+            // Reset slide pengelola ke halaman 1 setiap kali tab dibuka
+            if(tabId === 'pengelola') {
+                slideSemasa = 1;
+                kemaskiniPaparanSlide();
+            }
+        }
+
+        // --- Fungsi Pagination / Slide (Untuk AJK Pengelola) ---
+        let slideSemasa = 1;
+        const jumlahSlide = 5;
+
+        function tukarSlide(arah) {
+            slideSemasa += arah;
+            
+            // Kekalkan dalam had 1 hingga 5
+            if (slideSemasa > jumlahSlide) slideSemasa = 1; // Kembali ke muka depan jika lebih
+            if (slideSemasa < 1) slideSemasa = jumlahSlide; // Pergi ke muka akhir jika undur
+            
+            kemaskiniPaparanSlide();
+        }
+
+        function kemaskiniPaparanSlide() {
+            // Sembunyikan semua slide
+            document.querySelectorAll('.slide-content').forEach(slide => {
+                slide.classList.remove('active');
+            });
+            
+            // Paparkan slide semasa
+            document.getElementById('slide-' + slideSemasa).classList.add('active');
+            
+            // Kemaskini teks indikator
+            document.getElementById('slide-indicator').innerText = `HALAMAN ${slideSemasa} / ${jumlahSlide}`;
+        }
+    </script>
+</body>
+</html>
