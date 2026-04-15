@@ -179,11 +179,11 @@
                     <button onclick="tukarSlide(1)" class="bg-purple-600 text-white rounded-full w-8 h-8 flex items-center justify-center active:bg-purple-800 transition-colors"><i class="fas fa-chevron-right text-sm"></i></button>
                 </div>
 
-                <!-- Kontena Halaman (Kini dengan min-h-0) -->
-                <div class="flex-1 min-h-0 relative w-full overflow-hidden">
+                <!-- Kontena Halaman (Telah dibaiki struktur flex-nya) -->
+                <div class="flex-1 min-h-0 w-full flex flex-col">
                     
                     <!-- Halaman 1: Induk -->
-                    <div id="slide-1" class="absolute inset-0 flex flex-col slide-content active min-h-0">
+                    <div id="slide-1" class="flex-1 min-h-0 w-full flex-col slide-content active">
                         <h4 class="flex-none text-[clamp(0.9rem,2.2vh,1.1rem)] font-bold text-center text-purple-700 mb-2"><i class="fas fa-sitemap mr-2"></i>Jawatankuasa Induk</h4>
                         <div class="flex-1 min-h-0 overflow-y-auto custom-scrollbar pr-1 pb-4">
                             <div class="grid grid-cols-1 gap-3 text-[clamp(0.75rem,2vh,0.9rem)] px-2 mt-2">
@@ -198,7 +198,7 @@
                     </div>
 
                     <!-- Halaman 2: Kerja 1 -->
-                    <div id="slide-2" class="absolute inset-0 flex flex-col slide-content min-h-0">
+                    <div id="slide-2" class="flex-1 min-h-0 w-full flex-col slide-content">
                         <h4 class="flex-none text-[clamp(0.8rem,2vh,1rem)] font-bold text-center text-purple-700 mb-2"><i class="fas fa-briefcase mr-1"></i> J/K Kerja (1/8)</h4>
                         
                         <div class="flex-1 min-h-0 overflow-y-auto custom-scrollbar pr-1 pb-4 space-y-2.5">
@@ -236,7 +236,7 @@
                     </div>
 
                     <!-- Halaman 3: Kerja 2 -->
-                    <div id="slide-3" class="absolute inset-0 flex flex-col slide-content min-h-0">
+                    <div id="slide-3" class="flex-1 min-h-0 w-full flex-col slide-content">
                         <h4 class="flex-none text-[clamp(0.8rem,2vh,1rem)] font-bold text-center text-purple-700 mb-2"><i class="fas fa-briefcase mr-1"></i> J/K Kerja (2/8)</h4>
                         
                         <div class="flex-1 min-h-0 overflow-y-auto custom-scrollbar pr-1 pb-4 space-y-2.5">
@@ -262,7 +262,7 @@
                     </div>
 
                     <!-- Halaman 4: Kerja 3 -->
-                    <div id="slide-4" class="absolute inset-0 flex flex-col slide-content min-h-0">
+                    <div id="slide-4" class="flex-1 min-h-0 w-full flex-col slide-content">
                         <h4 class="flex-none text-[clamp(0.8rem,2vh,1rem)] font-bold text-center text-purple-700 mb-2"><i class="fas fa-briefcase mr-1"></i> J/K Kerja (3/8)</h4>
                         
                         <div class="flex-1 min-h-0 overflow-y-auto custom-scrollbar pr-1 pb-4">
@@ -286,7 +286,7 @@
                     </div>
 
                     <!-- Halaman 5: Kerja 4 -->
-                    <div id="slide-5" class="absolute inset-0 flex flex-col slide-content min-h-0">
+                    <div id="slide-5" class="flex-1 min-h-0 w-full flex-col slide-content">
                         <h4 class="flex-none text-[clamp(0.8rem,2vh,1rem)] font-bold text-center text-purple-700 mb-2"><i class="fas fa-briefcase mr-1"></i> J/K Kerja (4/8)</h4>
                         
                         <div class="flex-1 min-h-0 overflow-y-auto custom-scrollbar pr-1 pb-4">
@@ -314,7 +314,7 @@
                     </div>
 
                     <!-- Halaman 6: Kerja 5 -->
-                    <div id="slide-6" class="absolute inset-0 flex flex-col slide-content min-h-0">
+                    <div id="slide-6" class="flex-1 min-h-0 w-full flex-col slide-content">
                         <h4 class="flex-none text-[clamp(0.8rem,2vh,1rem)] font-bold text-center text-purple-700 mb-2"><i class="fas fa-briefcase mr-1"></i> J/K Kerja (5/8)</h4>
                         
                         <div class="flex-1 min-h-0 overflow-y-auto custom-scrollbar pr-1 pb-4 space-y-2.5">
@@ -351,7 +351,7 @@
                     </div>
 
                     <!-- Halaman 7: Kerja 6 -->
-                    <div id="slide-7" class="absolute inset-0 flex flex-col slide-content min-h-0">
+                    <div id="slide-7" class="flex-1 min-h-0 w-full flex-col slide-content">
                         <h4 class="flex-none text-[clamp(0.8rem,2vh,1rem)] font-bold text-center text-purple-700 mb-2"><i class="fas fa-briefcase mr-1"></i> J/K Kerja (6/8)</h4>
                         
                         <div class="flex-1 min-h-0 overflow-y-auto custom-scrollbar pr-1 pb-4 space-y-2.5">
@@ -389,7 +389,7 @@
                     </div>
 
                     <!-- Halaman 8: Kerja 7 -->
-                    <div id="slide-8" class="absolute inset-0 flex flex-col slide-content min-h-0">
+                    <div id="slide-8" class="flex-1 min-h-0 w-full flex-col slide-content">
                         <h4 class="flex-none text-[clamp(0.8rem,2vh,1rem)] font-bold text-center text-purple-700 mb-2"><i class="fas fa-briefcase mr-1"></i> J/K Kerja (7/8)</h4>
                         
                         <div class="flex-1 min-h-0 overflow-y-auto custom-scrollbar pr-1 pb-4">
@@ -423,7 +423,7 @@
                     </div>
 
                     <!-- Halaman 9: Kerja 8 -->
-                    <div id="slide-9" class="absolute inset-0 flex flex-col slide-content min-h-0">
+                    <div id="slide-9" class="flex-1 min-h-0 w-full flex-col slide-content">
                         <h4 class="flex-none text-[clamp(0.8rem,2vh,1rem)] font-bold text-center text-purple-700 mb-2"><i class="fas fa-briefcase mr-1"></i> J/K Kerja (8/8)</h4>
 
                         <div class="flex-1 min-h-0 overflow-y-auto custom-scrollbar pr-1 pb-4 space-y-2.5">
